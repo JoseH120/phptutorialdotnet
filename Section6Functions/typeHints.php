@@ -79,7 +79,34 @@ function add4($x, $y): int | float
 echo add4(10, 20) . PHP_EOL;
 echo add4(1.5, 2.5) . PHP_EOL;
 
-echo str_repeat('-', 20);
+echo str_repeat('-', 20) . PHP_EOL;
 echo "The mixed type.\n";
-/*  */
-// Tensai Ouji no Akaji Kokka Saisei Jutsu Episodio 3
+/* If a function returns a value of many types, you can use the mixed type.
+The mixed type means one several types. The mixed types. It's equivalented to 
+the following union type:
+object | resource | array | string | int | float | bool | null  
+filter_var(mixed $value, int $filter = FILTER_DEFAULT, array|int $options = 0): mixed
+*/
+echo str_repeat('-', 20) . PHP_EOL;
+echo "The nullable type.\n";
+/* The following defines a function that accepts a string and returns the 
+uppercase of that string: */
+function upper(string $str): string
+{
+    return strtoupper($str);
+}
+/* If you pass an argument with null, you'll get an error. */
+$str = null;
+// echo upper($str); // Throw error -> Uncaught TypeError.
+/* To fix this, you can make the $str parameter nullable like this: */
+function upper2(?string $str): string
+{
+    return strtoupper($str);
+}
+/* PHP allows you to mark the type declarations and returns values as nullable by 
+prefixing the type name with a question mark (?).
+In the above example, we add the '?' to the string type of the $str parameter. The
+'?string' allows you to pass a string argument or null.
+Note that the mixed type already includes the null type. Therefore, you don't need 
+to include nullable mixed like this: */
+var_dump(upper2($str));
