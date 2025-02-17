@@ -15,7 +15,7 @@
         from an <span>array</span> and returns it. Syntax:
     </p>
     <pre>array_shift(array &$array) : mixed</pre>
-    <?php include('../misc.php');
+    <?php include('../misc/misc.php');
     $numbers = [1, 2, 3];
     echo "<h3>Before use the array_shift </h3>";
     print_array($numbers);

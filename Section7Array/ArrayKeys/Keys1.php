@@ -13,7 +13,7 @@
     <p>
         The PHP <span>array_keys()</span> function accepts an <u>array</u>
     </p>
-    <?php include('../misc.php');
+    <?php include('../misc/misc.php');
     $numbers = [10, 20, 30];
     $keys = array_keys($numbers);
 

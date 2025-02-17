@@ -18,7 +18,7 @@
     </pre>
 
     <h4>PHP array_unshift examples</h4>
-    <?php include('../misc.php');
+    <?php include('../misc/misc.php');
     echo '<p>Before using unshift</p>';
     $permissions = [
         'edit',

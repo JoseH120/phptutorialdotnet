@@ -18,7 +18,7 @@
     </p>
     <pre>array_pop(array &$array) : mixed</pre>
     <h4>PHP array_pop() function example</h4>
-    <?php include('../misc.php');
+    <?php include('../misc/misc.php');
     $numbers = [1, 2, 3];
     echo "<h4>Before using array_pop</h4>";
     print_array($numbers);

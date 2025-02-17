@@ -11,7 +11,7 @@
 <body>
     <h4>Prepending an element to the beginning of an associative array</h4>
     <p>To prepend an element to an associative array, you use the <span>+</span> operator. For example:</p>
-    <?php include('../misc.php');
+    <?php include('../misc/misc.php');
 
     echo '<p>Before using unshift</p>';
     $colors = [

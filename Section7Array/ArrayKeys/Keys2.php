@@ -11,7 +11,7 @@
 <body>
     <h3>Using php array_keys() function with an associative array</h3>
     <h4>Example1</h4>
-    <?php include('../misc.php');
+    <?php include('../misc/misc.php');
 
     $user = [
         'username' => 'admin',

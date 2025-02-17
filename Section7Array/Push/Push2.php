@@ -11,7 +11,7 @@
 <body>
     <h3>Push an element to the end of an associative array</h3>
 
-    <?Php include('../misc.php');
+    <?Php include('../misc/misc.php');
     $roles = [
         'admin' => 1,
         'editor' => 2

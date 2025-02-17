@@ -16,7 +16,7 @@
         The syntax:
     </p>
     <pre>array_push(array &$array, mixed ...$values) : int</pre>
-    <?Php include('../misc.php');
+    <?Php include('../misc/misc.php');
     $numbers = [1, 2, 3];
 
     echo '<p>before array_push() function examples. </p>';

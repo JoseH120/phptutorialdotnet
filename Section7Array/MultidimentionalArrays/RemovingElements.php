@@ -23,7 +23,7 @@
             The following example uses the <span>unset()</span>
         </p>
         <h5>Before using unset</h5>
-        <?php include('../misc.php');
+        <?php include('../misc/misc.php');
         $tasks = [
             ['Learn php programming', 2],
             ['Practice php', 2],
