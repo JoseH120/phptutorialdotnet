@@ -29,12 +29,26 @@
     </p>
     <pre>$this->$variable($arguments)</pre>
     <?php
-    $str = new Str("Hello There");
+    $str = new Str("Hello there");
     echo "<p>";
-    echo $str->convert('title');
+    echo $str->convert('upper');
     echo "</p>";
     ?>
-    <h3></h3>
+    <hr>
+    <h3>2&#41;Using variable functions to call a static method example</h3>
+    <p>
+        The <u><i>Str</i></u> has a constructor that accepts a string. It
+        implements the toString() method that converts the <u><i>Str</i></u>
+        intance to a string.
+    </p>
+    <?php
+    $str1 = new Str('Hi');
+    $str2 = new Str('Hi');
+
+    $action = 'compare';
+
+    echo Str::$action($str1, $str2) === 0 ? 'Both strings are equal' : 'Both strings are not equal';
+    ?>
 
 
 </body>
