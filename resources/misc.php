@@ -5,7 +5,12 @@ function print_array($data): void
     print_r($data);
     echo '</pre>';
 }
-
+function print_dmp($data): void
+{
+    echo '<pre>';
+    var_dump($data);
+    echo "</pre>\n";
+}
 function print_dump(...$data): void
 {
     echo "\n<p>";

@@ -1,10 +1,21 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
-span{
+
+span {
     color: #00f;
 }
-u{
+
+u {
     color: #00f;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    display: block;
+    list-style: none;
 }
