@@ -1,10 +1,6 @@
-<?php
-include 'inc/functions.php';
-// include 'inc/functions.php'; // -> this throws errors
-/* Like  */
-?>
-<?php include_once 'inc/header.php'; ?>
-<?php include_once 'inc/header.php'; ?>
+<?php $title = "PHP include once" ?>
+<?php include_once '../inc/header.php'; ?>
+<?php include_once '../inc/header.php'; ?>
 
 <h1>PHP include_once Demo</h1>
 <h3>Why use the PHP include_once construct:</h3>
@@ -25,4 +21,4 @@ include 'inc/functions.php';
     it work properly.
 </p>
 
-<?php include 'inc/footer.php'; ?>
+<?php include '../inc/footer.php'; ?>
